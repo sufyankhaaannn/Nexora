@@ -1,0 +1,127 @@
+.product-card {
+  display: flex;
+  flex-direction: column;
+
+  overflow: hidden;
+
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+
+  background: var(--color-surface);
+
+  transition:
+    transform 200ms ease,
+    box-shadow 200ms ease;
+}
+
+.product-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-md);
+}
+
+.product-card__image-link {
+  display: block;
+}
+
+.product-card__image-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  aspect-ratio: 1 / 1;
+
+  padding: var(--space-8);
+
+  background: var(--color-bg);
+
+  overflow: hidden;
+}
+
+.product-card__image {
+  width: 100%;
+  height: 100%;
+
+  object-fit: contain;
+
+  transition: transform 250ms ease;
+}
+
+.product-card:hover .product-card__image {
+  transform: scale(1.04);
+}
+
+.product-card__image-fallback {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 100%;
+  height: 100%;
+
+  border: 1px dashed var(--color-border);
+  border-radius: var(--radius-md);
+
+  color: var(--color-text-muted);
+
+  font-size: var(--text-xs);
+  font-weight: 600;
+
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.product-card__content {
+  display: flex;
+  flex-direction: column;
+
+  padding: var(--space-5);
+}
+
+.product-card__category {
+  margin-bottom: var(--space-2);
+
+  color: var(--color-text-muted);
+  font-size: var(--text-xs);
+  font-weight: 600;
+
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
+.product-card__title {
+  min-height: 3rem;
+
+  color: var(--color-text);
+  font-size: var(--text-base);
+  font-weight: 600;
+  line-height: 1.4;
+
+  transition: color 180ms ease;
+}
+
+.product-card__title:hover {
+  color: var(--color-primary);
+}
+
+.product-card__meta {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  margin-top: var(--space-4);
+  margin-bottom: var(--space-4);
+
+  color: var(--color-text-muted);
+  font-size: var(--text-sm);
+}
+
+.product-card__price {
+  color: var(--color-text);
+  font-size: var(--text-lg);
+  font-weight: 700;
+}
+
+.product-card .btn {
+  width: 100%;
+}

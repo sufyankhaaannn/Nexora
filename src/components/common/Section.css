@@ -1,0 +1,20 @@
+.section {
+  padding-block: var(--space-20);
+}
+
+.section--dark {
+  background: var(--color-surface-dark);
+  color: var(--color-text-light);
+}
+
+@media (max-width: 768px) {
+  .section {
+    padding-block: var(--space-16);
+  }
+}
+
+@media (max-width: 480px) {
+  .section {
+    padding-block: var(--space-12);
+  }
+}

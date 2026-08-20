@@ -1,0 +1,35 @@
+.section-heading {
+  max-width: 680px;
+  margin-bottom: var(--space-10);
+}
+
+.section-heading__eyebrow {
+  display: inline-block;
+
+  margin-bottom: var(--space-3);
+
+  color: var(--color-primary);
+  font-size: var(--text-xs);
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.section-heading h2 {
+  margin-bottom: var(--space-4);
+}
+
+.section-heading p {
+  max-width: 600px;
+
+  font-size: var(--text-base);
+}
+
+.section-heading--center {
+  margin-inline: auto;
+  text-align: center;
+}
+
+.section-heading--center p {
+  margin-inline: auto;
+}

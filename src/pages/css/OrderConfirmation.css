@@ -1,0 +1,363 @@
+.order-confirmation {
+  width: 100%;
+}
+
+.order-confirmation__success {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  margin-bottom: var(--space-12);
+
+  text-align: center;
+}
+
+.order-confirmation__icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 64px;
+  height: 64px;
+
+  margin-bottom: var(--space-5);
+
+  border: 1px solid var(--color-border);
+  border-radius: 50%;
+
+  background: var(--color-surface);
+  color: var(--color-primary);
+}
+
+.order-confirmation__eyebrow {
+  margin-bottom: var(--space-3);
+
+  color: var(--color-primary);
+  font-size: var(--text-xs);
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.order-confirmation__success h1 {
+  margin-bottom: var(--space-3);
+}
+
+.order-confirmation__success p {
+  margin-bottom: var(--space-4);
+
+  color: var(--color-text-muted);
+}
+
+.order-confirmation__order-id {
+  color: var(--color-text);
+
+  font-size: var(--text-sm);
+  font-weight: 600;
+}
+
+.order-confirmation__layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 340px;
+
+  gap: var(--space-10);
+
+  align-items: start;
+}
+
+.order-confirmation__main {
+  display: flex;
+  flex-direction: column;
+
+  gap: var(--space-6);
+}
+
+.order-confirmation__card,
+.order-confirmation__summary {
+  padding: var(--space-6);
+
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+
+  background: var(--color-surface);
+}
+
+.order-confirmation__card-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  margin-bottom: var(--space-6);
+}
+
+.order-confirmation__card-header h2,
+.order-confirmation__summary h2 {
+  margin: 0;
+
+  font-size: var(--text-lg);
+}
+
+.order-confirmation__card-header span {
+  color: var(--color-text-muted);
+
+  font-size: var(--text-sm);
+}
+
+.order-confirmation__items {
+  display: flex;
+  flex-direction: column;
+
+  gap: var(--space-4);
+}
+
+.order-confirmation__item {
+  display: grid;
+  grid-template-columns:
+    72px
+    minmax(0, 1fr)
+    auto;
+
+  gap: var(--space-4);
+
+  align-items: center;
+
+  padding-bottom: var(--space-4);
+
+  border-bottom: 1px solid var(--color-border);
+}
+
+.order-confirmation__item:last-child {
+  padding-bottom: 0;
+
+  border-bottom: 0;
+}
+
+.order-confirmation__image-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 72px;
+  height: 72px;
+
+  padding: var(--space-2);
+
+  border-radius: var(--radius-md);
+
+  background: var(--color-bg);
+
+  overflow: hidden;
+}
+
+.order-confirmation__image {
+  width: 100%;
+  height: 100%;
+
+  object-fit: contain;
+}
+
+.order-confirmation__item-info {
+  min-width: 0;
+}
+
+.order-confirmation__item-info h3 {
+  margin-bottom: var(--space-2);
+
+  overflow: hidden;
+
+  color: var(--color-text);
+
+  font-size: var(--text-sm);
+  font-weight: 600;
+
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.order-confirmation__item-info span {
+  color: var(--color-text-muted);
+
+  font-size: var(--text-sm);
+}
+
+.order-confirmation__item strong {
+  color: var(--color-text);
+
+  font-size: var(--text-sm);
+}
+
+.order-confirmation__customer {
+  display: flex;
+  flex-direction: column;
+
+  gap: var(--space-2);
+
+  color: var(--color-text-muted);
+
+  font-size: var(--text-sm);
+  line-height: 1.6;
+}
+
+.order-confirmation__customer strong {
+  margin-bottom: var(--space-1);
+
+  color: var(--color-text);
+}
+
+.order-confirmation__summary {
+  position: sticky;
+  top: 96px;
+}
+
+.order-confirmation__summary h2 {
+  margin-bottom: var(--space-6);
+}
+
+.order-confirmation__summary-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  margin-bottom: var(--space-4);
+
+  color: var(--color-text-muted);
+
+  font-size: var(--text-sm);
+}
+
+.order-confirmation__summary-row strong {
+  color: var(--color-text);
+}
+
+.order-confirmation__divider {
+  height: 1px;
+
+  margin-block: var(--space-5);
+
+  background: var(--color-border);
+}
+
+.order-confirmation__total {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  margin-bottom: var(--space-6);
+
+  color: var(--color-text);
+
+  font-size: var(--text-lg);
+  font-weight: 700;
+}
+
+.order-confirmation__total strong {
+  font-size: var(--text-xl);
+}
+
+.order-confirmation__button {
+  display: block;
+}
+
+.order-confirmation__button button {
+  width: 100%;
+}
+
+.order-confirmation__empty {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  min-height: 480px;
+
+  text-align: center;
+}
+
+.order-confirmation__empty svg {
+  margin-bottom: var(--space-5);
+
+  color: var(--color-text-muted);
+}
+
+.order-confirmation__empty h1 {
+  margin-bottom: var(--space-3);
+}
+
+.order-confirmation__empty p {
+  margin-bottom: var(--space-6);
+
+  color: var(--color-text-muted);
+}
+
+/* Tablet */
+
+@media (max-width: 1000px) {
+  .order-confirmation__layout {
+    grid-template-columns: 1fr;
+  }
+
+  .order-confirmation__summary {
+    position: static;
+  }
+}
+
+/* Mobile */
+
+@media (max-width: 600px) {
+  .order-confirmation__success {
+    margin-bottom: var(--space-8);
+  }
+
+  .order-confirmation__success h1 {
+    font-size: var(--text-2xl);
+  }
+
+  .order-confirmation__card,
+  .order-confirmation__summary {
+    padding: var(--space-5);
+  }
+
+  .order-confirmation__item {
+    grid-template-columns:
+      64px
+      minmax(0, 1fr);
+
+    gap: var(--space-3);
+  }
+
+  .order-confirmation__image-wrapper {
+    width: 64px;
+    height: 64px;
+  }
+
+  .order-confirmation__item strong {
+    grid-column: 2;
+  }
+}
+
+/* Small mobile */
+
+@media (max-width: 400px) {
+  .order-confirmation__card,
+  .order-confirmation__summary {
+    padding: var(--space-4);
+  }
+
+  .order-confirmation__item {
+    grid-template-columns:
+      56px
+      minmax(0, 1fr);
+  }
+
+  .order-confirmation__image-wrapper {
+    width: 56px;
+    height: 56px;
+  }
+
+  .order-confirmation__success h1 {
+    font-size: var(--text-xl);
+  }
+}
+.order-confirmation__button + .order-confirmation__button {
+  margin-top: var(--space-3);
+}
